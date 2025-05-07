@@ -1,0 +1,52 @@
+# Node.js (Angular)
+**/node_modules/
+**/dist/
+**/out-tsc/
+**/.angular/
+**/.angular-cache/
+**/package-lock.json
+**/.env
+
+# Angular IDE & tooling
+**/.vscode/
+**/.idea/
+**/coverage/
+**/tmp/
+
+# Build artifacts
+**/build/
+**/wwwroot/build/
+**/bin/
+**/obj/
+
+# Visual Studio & Rider
+**/*.user
+**/*.suo
+**/*.sln.docstates
+**/*.userosscache
+**/*.sln.ide
+.vs/
+.idea/
+
+# Logs
+**/*.log
+logs/
+npm-debug.log*
+
+# Environment variables
+.env
+.env.*
+
+# Docker
+docker-compose.override.yml
+**/Dockerfile.*
+**/.docker/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Swagger auto-generated docs (if any)
+**/swagger-output.json

@@ -1,0 +1,93 @@
+<div class="chat-page">
+    <h3>Chat IA</h3>
+    <div class="new-chat-container">
+
+        <select class="btn-new-chat" [(ngModel)]="iaSeleccionada" title="Seleccione el tipo de IA que desea utilizar">
+            <option value="openai">OpenAI</option>
+            <option value="gemini">Gemini</option>
+        </select>
+
+        @if (iaSeleccionada === 'openai') {
+        <select class="btn-new-chat" [(ngModel)]="modeloSeleccionado" title="Selecciona el modelo de IA">
+            <option *ngFor="let modelo of modelos" [value]="modelo">
+                {{ modelo }}
+            </option>
+        </select>
+        }
+
+        <select class="btn-new-chat" [(ngModel)]="idiomaSeleccionado" title="Seleccione el idioma de la respuesta">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+            <option value="fr">Frances</option>
+            <option value="de">Deutsch</option>
+        </select>
+
+        <button class="btn-new-chat" (click)="nuevoChat()" title="Iniciar una nueva conversación">
+            <i class="fas fa-pen-to-square"></i>
+        </button>
+    </div>
+
+    <div *ngIf="cargando" class="top-loading-bar"></div>
+
+    <div class="chat-container" #scrollArea>
+        <!-- Mensaje si no hay historial -->
+        <div class="chat-placeholder" *ngIf="historial.length === 0">
+            <p>🤖 ¿Qué tienes en mente hoy?</p>
+        </div>
+
+        <!-- Historial de mensajes -->
+        <div *ngFor="let mensaje of historial">
+            <div class="chat-row user">
+                <div class="chat-bubble user" title="Tu mensaje">
+                    <strong>👤:</strong> {{ mensaje.pregunta }}
+                </div>
+            </div>
+
+            <div class="chat-row ia">
+                <div class="chat-bubble ia">
+                    <div #contenidoRespuesta [innerHTML]="'<strong>🤖:</strong> ' + mensaje.respuesta"></div>
+                    <div class="img-actions" *ngIf="mensaje.respuesta.includes('<img')">
+                        <button (click)="verImagen(mensaje.respuesta)" title="Ver imagen">🔍</button>
+                        <button (click)="descargarImagen(mensaje.respuesta)" title="Descargar">📥</button>
+                    </div>
+                </div>
+                <button class="btn-copiar-externo" (click)="copiarHtmlComoEstilo(contenidoRespuesta)"
+                    title="Copiar con estilos">📋</button>
+                <button class="btn-copiar-externo" (click)="copiarTexto(mensaje.textoPlano)" title="Copiar">📋</button>
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+
+    <div class="input-area-fixed">
+        <div class="input-controls">
+            @if (iaSeleccionada != null) {
+            <div class="image-upload-wrapper">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" [(ngModel)]="generarImagen" />
+                    <span>¿Generar imagen?</span>
+                </label>
+
+                @if (iaSeleccionada === 'gemini' && generarImagen) {
+                <label class="file-upload-label">
+                    📎 Seleccionar imagen
+                    <input type="file" (change)="onFileSelected($event)" accept="image/*" hidden />
+                </label>
+                }
+            </div>
+            }
+
+            <textarea [(ngModel)]="prompt" placeholder="Escribe algo..."></textarea>
+            <button (click)="enviar()">Enviar</button>
+        </div>
+    </div>
+</div>
+
+@if (imagenVistaAmpliada) {
+<div class="modal-imagen" (click)="cerrarVistaAmpliada()">
+    <img [src]="imagenVistaAmpliada" class="modal-img" (click)="$event.stopPropagation()" alt="Vista ampliada" />
+    <button class="cerrar-modal" (click)="cerrarVistaAmpliada()">✕</button>
+</div>
+}

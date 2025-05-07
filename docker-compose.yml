@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  backend:
+    build: ./OpenAiApiDemo
+    ports:
+      - "5000:5000"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+
+  frontend:
+    build: ./ia-assistant-ui
+    ports:
+      - "4200:80"
+    depends_on:
+      - backend
