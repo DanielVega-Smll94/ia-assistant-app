@@ -54,7 +54,7 @@ jobs:
         with:
           # Additional arguments for the SonarScanner CLI
           args: >
-            -Dsonar.projectKey=DanielVega-Smll94_ia-assistant-app
+            -Dsonar.projectKey=vegatech_ia-assistant-app
             -Dsonar.organization=danielvega-smll94
             -Dsonar.sources=.
             # Comma-separated paths to directories containing main source files.            
