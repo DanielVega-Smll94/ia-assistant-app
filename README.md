@@ -61,13 +61,13 @@ docker-compose up --build
 
 ### 🛠️ Herramientas de Generación 
 - Seleccionar modelos y tipo de ia, hasta idioma:
-![Herramientas de generación](https://raw.githubusercontent.com/DanielVega-Smll94/ia-assistant-app/master/readme-images/herramientas-generacion.png)
+![Herramientas de generación](readme-images/herramientas-generacion.png)
 
 ### 🤖🧠 Generación de imagenes por medio de OPENAI:
-[![OpenAI](https://github.com/DanielVega-Smll94/ia-assistant-app/raw/master/readme-images/openai-generacion.png)]
+![OpenAI](readme-images/openai-generacion.png)
 
 ### 🤖🪐 Generación de imagenes por medio de GEMINI:
-[![Gemini](https://github.com/DanielVega-Smll94/ia-assistant-app/raw/master/readme-images/gemini-generacion.png)]
+![Gemini](readme-images/gemini-generacion.png)
 
 
 
