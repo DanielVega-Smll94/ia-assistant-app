@@ -55,17 +55,18 @@ docker-compose up --build
 - Interfaz con scroll automático, checkbox y selectores de idioma/modelo
 
 ## 📸 Capturas del sistema
+![interfaz-chat](https://github.com/user-attachments/assets/bd555675-b2bb-46a9-b6f5-8a7bf3a36f91)
 
 ### 💬 Interfaz de chatbot:
-<img src="https://raw.githubusercontent.com/DanielVega-SmII94/ia-assistant-app/master/readme-images/interfaz-chat.png" width="100%" alt="Interfaz del chat">
+![Interfaz del chat](https://raw.githubusercontent.com/DanielVega-Smll94/ia-assistant-app/master/readme-images/interfaz-chat.png)
 
 ### 🛠️ Herramientas de Generación
-<img src="https://raw.githubusercontent.com/DanielVega-SmII94/ia-assistant-app/master/readme-images/herramientas-generacion.png" width="100%" alt="Herramientas de generación">
+![Herramientas de generación](https://raw.githubusercontent.com/DanielVega-Smll94/ia-assistant-app/master/readme-images/herramientas-generacion.png)
 
 ### 🤖🧠 Generación de imágenes por medio de OPENAI:
-<img src="https://raw.githubusercontent.com/DanielVega-SmII94/ia-assistant-app/master/readme-images/openai-generacion.png" width="100%" alt="OpenAI">
+![OpenAI](https://raw.githubusercontent.com/DanielVega-Smll94/ia-assistant-app/master/readme-images/openai-generacion.png)
 
 ### 🤖🪐 Generación de imágenes por medio de GEMINI:
-<img src="https://raw.githubusercontent.com/DanielVega-SmII94/ia-assistant-app/master/readme-images/gemini-generacion.png" width="100%" alt="Gemini">
+![Gemini](https://raw.githubusercontent.com/DanielVega-Smll94/ia-assistant-app/master/readme-images/gemini-generacion.png)
 
 
