@@ -20,7 +20,8 @@ namespace OpenAiApiDemo.Services
         {
             _httpClient = httpClient;
             // leer appsettings.json
-            _apiKey = config["OpenAi:ApiKey"];
+            _apiKey = Environment.GetEnvironmentVariable("OPENAI_API_KEY");
+            //_apiKey = config["OpenAi:ApiKey"];
             _apiUrl = config["OpenAi:Api"];
         }
 
