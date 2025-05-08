@@ -13,14 +13,20 @@ RUN dotnet publish -c Release -o /app/backend
 FROM node:20-alpine AS build-frontend
 WORKDIR /app
 COPY ./ia-assistant-ui ./
-RUN npm install && npm run build
+RUN npm install
+RUN npm run build --prod
 
 # --- FINAL IMAGE ---
 FROM nginx:alpine
 WORKDIR /app
+
+# ✅ Ajuste aquí según tu outputPath:
 COPY --from=build-frontend /app/dist/ia-assistant-ui /usr/share/nginx/html
+
 COPY --from=build-backend /app/backend /app/backend
 COPY ./ia-assistant-ui/nginx.conf /etc/nginx/conf.d/default.conf
+
 EXPOSE 80
 EXPOSE 5000
+
 CMD ["sh", "-c", "/app/backend/OpenAiApiDemo & nginx -g 'daemon off;'"]
