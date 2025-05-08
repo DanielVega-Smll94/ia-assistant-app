@@ -14,7 +14,7 @@ FROM node:20-alpine AS build-frontend
 WORKDIR /app
 COPY ./ia-assistant-ui ./
 RUN npm install
-RUN npm run build --prod
+RUN npm run build --configuration production
 
 # --- FINAL IMAGE ---
 FROM nginx:alpine
