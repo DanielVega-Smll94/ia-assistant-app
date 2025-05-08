@@ -15,7 +15,8 @@ namespace OpenAiApiDemo.Services
         public GeminiService(HttpClient httpClient, IConfiguration config)
         {
             _httpClient = httpClient;
-            _apiKey = config["GeminiAi:ApiKey"];
+            _apiKey = Environment.GetEnvironmentVariable("GEMINI_API_KEY");
+            //_apiKey = config["GeminiAi:ApiKey"];
             _apiUrl = config["GeminiAi:Api"];
             _apiUrlBeta = config["GeminiAi:ApiBeta"];
         }
