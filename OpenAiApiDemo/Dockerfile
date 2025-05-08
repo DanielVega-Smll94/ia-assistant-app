@@ -6,8 +6,7 @@ EXPOSE 5000
 # Imagen para build
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
-COPY ./OpenAiApiDemo ./OpenAiApiDemo
-WORKDIR /src/OpenAiApiDemo
+COPY . .
 RUN dotnet restore
 RUN dotnet publish -c Release -o /app/publish
 
