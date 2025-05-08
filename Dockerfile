@@ -20,8 +20,8 @@ RUN npm run build --configuration production
 FROM nginx:alpine
 WORKDIR /app
 COPY --from=build-frontend /app/dist/ia-assistant-ui /usr/share/nginx/html
-COPY --from=build-backend /app/backend /app/backend
 COPY ./ia-assistant-ui/nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=build-backend /app/backend /app/backend
 
 EXPOSE 80
 CMD ["sh", "-c", "/app/backend/OpenAiApiDemo & nginx -g 'daemon off;'"]
