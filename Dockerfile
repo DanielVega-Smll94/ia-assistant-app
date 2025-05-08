@@ -24,6 +24,4 @@ COPY --from=build-backend /app/backend /app/backend
 COPY ./ia-assistant-ui/nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
-EXPOSE 5000
-
 CMD ["sh", "-c", "/app/backend/OpenAiApiDemo & nginx -g 'daemon off;'"]
