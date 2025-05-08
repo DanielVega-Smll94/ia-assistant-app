@@ -19,19 +19,11 @@ RUN npm run build --prod
 # --- FINAL IMAGE ---
 FROM nginx:alpine
 WORKDIR /app
-
-# ✅ Este path depende de angular.json "outputPath": "dist"
-COPY --from=build-frontend /app/dist /usr/share/nginx/html
-
-# ✅ Backend copia completa
+COPY --from=build-frontend /app/dist/ia-assistant-ui /usr/share/nginx/html
 COPY --from=build-backend /app/backend /app/backend
-
-# ✅ nginx.conf con Angular routes fallback
 COPY ./ia-assistant-ui/nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
 EXPOSE 5000
 
-# ✅ Levantar ambos servicios: backend + nginx
 CMD ["sh", "-c", "/app/backend/OpenAiApiDemo & nginx -g 'daemon off;'"]
-
