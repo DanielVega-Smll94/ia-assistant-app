@@ -57,10 +57,11 @@ docker-compose up --build
 ## 📸 Capturas del sistema
 
 ### 💬 Interfaz de chatbot:
-[![Interfaz del chat](https://github.com/DanielVega-Smll94/ia-assistant-app/raw/master/readme-images/interfaz-chat.png)]
+![Interfaz del chat](readme-images/interfaz-chat.png)
+
 ### 🛠️ Herramientas de Generación 
 - Seleccionar modelos y tipo de ia, hasta idioma:
-![Herramientas de generación](https://github.com/DanielVega-Smll94/ia-assistant-app/raw/master/readme-images/herramientas-generacion.png)]
+![Herramientas de generación](https://raw.githubusercontent.com/DanielVega-Smll94/ia-assistant-app/master/readme-images/herramientas-generacion.png)
 
 ### 🤖🧠 Generación de imagenes por medio de OPENAI:
 [![OpenAI](https://github.com/DanielVega-Smll94/ia-assistant-app/raw/master/readme-images/openai-generacion.png)]
