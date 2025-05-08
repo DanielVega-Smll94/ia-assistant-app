@@ -54,16 +54,20 @@ docker-compose up --build
 - Previsualización y descarga de imágenes
 - Interfaz con scroll automático, checkbox y selectores de idioma/modelo
 
-Interfaz de chatbot:
+## 📸 Capturas del sistema
 
-Seleccionar modelos y tipo de ia, hasta idioma
-![image](https://github.com/user-attachments/assets/73f34a29-6268-4b31-9a1a-93f4ad7bfffd)
+### 💬 Interfaz de chatbot:
+![Interfaz del chat](./assets/interfaz-chat.png)
 
-Esta imagen presenta la generación de imagenes por medio de OPENAI
-![image](https://github.com/user-attachments/assets/1d1b9bde-bcc5-428b-afaa-1993a30aaed0)
+### 🛠️ Herramientas de Generación 
+- Seleccionar modelos y tipo de ia, hasta idioma:
+![Herramientas de generación](./assets/herramientas-generacion.png)
 
-Esta imagen presenta la generación de imagenes por medio de Gemini
-![image](https://github.com/user-attachments/assets/d33b3e56-1543-4170-bd43-8b63c33a9eae)
+### 🤖🧠 Generación de imagenes por medio de OPENAI:
+![OpenAI](./assets/openai-generacion.png)
+
+### 🤖🪐 Generación de imagenes por medio de GEMINI:
+![Gemini](./assets/gemini-generacion.png)
 
 
 
