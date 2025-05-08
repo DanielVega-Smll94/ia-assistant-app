@@ -57,16 +57,15 @@ docker-compose up --build
 ## 📸 Capturas del sistema
 
 ### 💬 Interfaz de chatbot:
-![Interfaz del chat](https://raw.githubusercontent.com/DanielVega-Smll94/ia-assistant-app/master/readme-images/interfaz-chat.png)
+<img src="https://raw.githubusercontent.com/DanielVega-SmII94/ia-assistant-app/master/readme-images/interfaz-chat.png" width="100%" alt="Interfaz del chat">
 
 ### 🛠️ Herramientas de Generación
-![Herramientas de generación](https://raw.githubusercontent.com/DanielVega-Smll94/ia-assistant-app/master/readme-images/herramientas-generacion.png)
+<img src="https://raw.githubusercontent.com/DanielVega-SmII94/ia-assistant-app/master/readme-images/herramientas-generacion.png" width="100%" alt="Herramientas de generación">
 
 ### 🤖🧠 Generación de imágenes por medio de OPENAI:
-![OpenAI](https://raw.githubusercontent.com/DanielVega-Smll94/ia-assistant-app/master/readme-images/openai-generacion.png)
+<img src="https://raw.githubusercontent.com/DanielVega-SmII94/ia-assistant-app/master/readme-images/openai-generacion.png" width="100%" alt="OpenAI">
 
 ### 🤖🪐 Generación de imágenes por medio de GEMINI:
-![Gemini](https://raw.githubusercontent.com/DanielVega-Smll94/ia-assistant-app/master/readme-images/gemini-generacion.png)
-
+<img src="https://raw.githubusercontent.com/DanielVega-SmII94/ia-assistant-app/master/readme-images/gemini-generacion.png" width="100%" alt="Gemini">
 
 
