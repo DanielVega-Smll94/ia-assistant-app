@@ -54,6 +54,8 @@ docker-compose up --build
 - Previsualización y descarga de imágenes
 - Interfaz con scroll automático, checkbox y selectores de idioma/modelo
 
+![Test](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/1280px-Markdown-mark.svg.png)
+
 ## 📸 Capturas del sistema
 ![interfaz-chat](https://github.com/user-attachments/assets/bd555675-b2bb-46a9-b6f5-8a7bf3a36f91)
 
